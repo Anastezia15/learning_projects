@@ -54,24 +54,32 @@ class MyException extends Exception{
 
 }*/
 public class Main {
-    int k = 5;
-    public boolean checkIt(int k){
-        return k-- > 0 ?true : false;
+
+    public static void Print(String s) {
+        System.out.println(s);
     }
-    public void printThem(){
-        while(checkIt(k)){
+
+    int k = 5;
+
+    public boolean checkIt(int k) {
+        return k-- > 0 ? true : false;
+    }
+
+    public void printThem() {
+        while (checkIt(k)) {
             System.out.print(k--);
         }
     }
+
     public static void main(String[] args) {
         new Main().printThem();
 
         int[] array1, array2[];
 
-        array1=new int[]{1,2,3};
-        array2=new int [][]{{1,2,3},
-                          { 4,5,6}};
+        array1 = new int[]{1, 2, 3};
+        array2 = new int[][]{{1, 2, 3},
+                {4, 5, 6}};
 
-
+        Print("Hello");
     }
 }
